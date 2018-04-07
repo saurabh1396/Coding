@@ -1,7 +1,0 @@
-/Users/utkarshsingh/Desktop/Coding/snake.cpp:14:28: error: expected unqualified-id
-      char c = toupper(str.(i));
-                           ^
-/Users/utkarshsingh/Desktop/Coding/snake.cpp:15:19: error: type 'string' (aka 'basic_string<char, char_traits<char>, allocator<char> >') does not provide a call operator
-         ns= ns + str(i);
-                  ^~~
-2 errors generated.

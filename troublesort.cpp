@@ -3,10 +3,11 @@ using namespace std;
 bool arraySortedOrNot(int arr[],int n);
 int check(int arr[],int n);
 int main(){
-  int t,te,n,c=1;
+  int t,te,n;
   cin>>t;
   te=t;
   while (t--) {
+    int c=1;
     cin>>n;
     int arr[n];
     for(int i=0;i<n;i++){
@@ -34,10 +35,12 @@ int main(){
   }
 }
 int check(int arr[],int n){
-int i;
-for( i=0;i<n;i++){
-  if(arr[i]>arr[i+1]){
-    return i ;
+int k;
+for( k=0;k<n;k++){
+  if(arr[k]>arr[k+1]){
+    return k ;
+  }else{
+    continue;
   }
 
 }

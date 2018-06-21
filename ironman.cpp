@@ -3,7 +3,7 @@
 #include<string.h>
 using namespace std;
 int main(){
-  int t,n;
+  int t;
   cin>>t;
   cin.ignore();
 
@@ -11,7 +11,7 @@ int main(){
     string str,str1="",str2="";
     getline(cin,str);
     for(int i = 0 ; i <str.length();i++){
-      int k = int(str[i]);
+    //  int k = int(str[i]);
       if((str[i]>='A'&&str[i]<='Z') || (str[i]>='a'&&str[i]<='z')||(str[i]>='0'&&str[i]<='9'))
       {
         str1 = str[i]+str1;

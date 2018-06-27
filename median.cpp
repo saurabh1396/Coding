@@ -2,8 +2,8 @@
 #include<algorithm>
 #include<vector>
 using namespace std;
-int even(vector <int>);
-int odd(vector<int>);
+void even(vector <int>);
+void odd(vector<int>);
 int main(){
   vector <int> g1;
     vector <int> :: iterator i;
@@ -27,13 +27,15 @@ int main(){
 
 }
 }
-int even(vector<int> g1){
-  int size= g1.size()/2;
-  int b = (g1[(size)/2] + g1[(size/2+1)])/2;
+void even(vector<int> g1){
+  int k= g1.size();
+  //cout<<k<<endl;
+  //cout<<g1[1]<<" "<<g1[0]<<endl;
+  int b = (g1[(k)/2-1] + g1[((k/2+1)-1)])/2;
    cout<<b<<endl;
 }
-int odd(vector<int> g1){
-int size=g1.size()/2;
- int b = g1[size/2+1];
+void odd(vector<int> g1){
+int size=g1.size();
+ int b = g1[(size/2+1)-1];
  cout<<b<<endl;
 }

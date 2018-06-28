@@ -8,6 +8,13 @@ class LinkedList{
       next = null;
     }
   }
+  public void printlist(){
+    Node n=head;
+    while(n!=null){
+      System.out.print(n.data+" ");
+      n=n.next;
+    }
+  }
   public static void main(String[]args){
     LinkedList list = new LinkedList();
     list.head = new Node(1);
@@ -15,6 +22,6 @@ class LinkedList{
     Node third = new Node(3);
     list.head.next= second;
     second.next = third;
-
+list.printlist();
   }
 }

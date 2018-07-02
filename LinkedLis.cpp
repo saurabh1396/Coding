@@ -3,11 +3,11 @@ using namespace std;
 struct{
   int data;
   struct Node *next;
-}
+};
 int main(){
-  struct Node* head=null;
-  struct Node* first=null;
-  struct Node* second=null;
+  struct Node* head=NULL;
+  struct Node* first=NULL;
+  struct Node* second=NULL;
   head= (struct Node*)malloc(sizeof(struct Node));
   second= (struct Node*)malloc(sizeof(struct Node));
   third= (struct Node*)malloc(sizeof(struct Node));

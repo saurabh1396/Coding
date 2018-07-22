@@ -31,6 +31,14 @@ for(int i =1;i<=v-1,i++){
     if (dist[u] != INT_MAX && dist[u] + weight < dist[v])
                 dist[v] = dist[u] + weight;
         }
+        for (int i = 0; i < E; i++)
+    {
+        int u = graph->edge[i].src;
+        int v = graph->edge[i].dest;
+        int weight = graph->edge[i].weight;
+        if (dist[u] != INT_MAX && dist[u] + weight < dist[v])
+            printf("Graph contains negative weight cycle");
+    }
   }
 }
 }

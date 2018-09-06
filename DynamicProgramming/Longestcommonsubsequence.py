@@ -1,5 +1,5 @@
 def LCS(P,Q,n,m):
- arr = [[None]*(n) for i in xrange(m)]
+ arr = [[None]*(n+1) for i in xrange(m+1)]
  if arr[n][m]!=undefined :
   return arr[n][m]
  if n==0 or m==0:

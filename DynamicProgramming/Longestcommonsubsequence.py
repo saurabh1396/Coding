@@ -1,6 +1,7 @@
+arr = [[0 for x in range(50)] for x in range(50)]
 def LCS(P,Q,n,m):
- arr = [[None]*(n+1) for i in xrange(m+1)]
- if arr[n][m]!=undefined :
+
+ if arr[n][m]!= NULL :
   return arr[n][m]
  if n==0 or m==0:
   result =0
